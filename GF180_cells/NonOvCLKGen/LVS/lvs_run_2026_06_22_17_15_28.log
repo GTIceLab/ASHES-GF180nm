@@ -1,0 +1,2 @@
+22-Jun-2026 13:15:28 | INFO    | Your Klayout version is: KLayout 0.28.16
+22-Jun-2026 13:15:28 | INFO    | Running Global Foundries 180nm MCU /home/luha/pdks/gf180mcuD/libs.tech/klayout/tech/lvs/gf180mcu.lvs checks on design /home/luha/GF180_cells/NonOvCLKGen/NonOvCLKGen.gds on cell NonOvCLKGen

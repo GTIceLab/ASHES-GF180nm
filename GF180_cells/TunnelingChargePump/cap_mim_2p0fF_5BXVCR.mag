@@ -1,0 +1,33 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1782671096
+<< mimcap >>
+rect -620 408 380 500
+rect -620 -408 -528 408
+rect 288 -408 380 408
+rect -620 -500 380 -408
+<< mimcapcontact >>
+rect -528 -408 288 408
+<< metal4 >>
+rect -740 548 740 620
+rect -740 500 606 548
+rect -740 -500 -620 500
+rect 380 -500 606 500
+rect -740 -548 606 -500
+rect 662 -548 740 548
+rect -740 -620 740 -548
+<< via4 >>
+rect 606 -548 662 548
+<< metal5 >>
+rect 590 548 678 563
+rect -540 408 300 420
+rect -540 -408 -528 408
+rect 288 -408 300 408
+rect -540 -420 300 -408
+rect 590 -548 606 548
+rect 662 -548 678 548
+rect 590 -563 678 -548
+<< properties >>
+string FIXED_BBOX -740 -620 500 620
+<< end >>

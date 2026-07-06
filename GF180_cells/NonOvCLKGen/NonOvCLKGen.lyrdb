@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description/>
+ <original-file/>
+ <generator>drc: script='/home/luha/pdks/ciel/gf180mcu/versions/140b0494c6665b10ce9353cb1c2ef5bcc18e7d66/gf180mcuD/libs.tech/klayout/tech/drc/gf180mcu.drc'</generator>
+ <top-cell>NonOvCLKGen</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>V1.1</name>
+   <description>V1.1 : Min/max via1 size . : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.2a</name>
+   <description>V1.2a : min. via1 spacing : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.2b</name>
+   <description>V1.2b : Space in 4x4 or larger via1 array : 0.36µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.3a</name>
+   <description>V1.3a : metal1 overlap of via1 &gt;= 0</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.3c</name>
+   <description>V1.3c : metal1 (&lt; 0.34um) end-of-line overlap of via1: 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.3d</name>
+   <description>V1.3d : If metal1 overlap via1 by &lt; 0.04um on one side, adjacent metal1 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.4a</name>
+   <description>V1.4a : metal2 overlap of via1 &gt;= 0.01 upper_metal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.4b</name>
+   <description>V1.4b : metal2 (&lt; 0.34um) end-of-line overlap of via1 : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V1.4c</name>
+   <description>V1.4c : If metal2 overlap via1 by &lt; 0.04um on one side, adjacent metal2 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.1</name>
+   <description>V2.1 : Min/max via2 size . : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.2a</name>
+   <description>V2.2a : min. via2 spacing : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.2b</name>
+   <description>V2.2b : Space in 4x4 or larger via2 array : 0.36µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.3b</name>
+   <description>V2.3b : metal2 overlap of via2 &gt;= 0.01</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.3c</name>
+   <description>V2.3c : metal2 (&lt; 0.34um) end-of-line overlap of via2: 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.3d</name>
+   <description>V2.3d : If metal2 overlap via2 by &lt; 0.04um on one side, adjacent metal2 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.4a</name>
+   <description>V2.4a : metal3 overlap of via2 &gt;= 0.01 upper_metal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.4b</name>
+   <description>V2.4b : metal3 (&lt; 0.34um) end-of-line overlap of via2 : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V2.4c</name>
+   <description>V2.4c : If metal3 overlap via2 by &lt; 0.04um on one side, adjacent metal3 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.1</name>
+   <description>V3.1 : Min/max via3 size . : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.2a</name>
+   <description>V3.2a : min. via3 spacing : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.2b</name>
+   <description>V3.2b : Space in 4x4 or larger via3 array : 0.36µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.3b</name>
+   <description>V3.3b : metal3 overlap of via3 &gt;= 0.01</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.3c</name>
+   <description>V3.3c : metal3 (&lt; 0.34um) end-of-line overlap of via3: 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.3d</name>
+   <description>V3.3d : If metal3 overlap via3 by &lt; 0.04um on one side, adjacent metal3 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.4a</name>
+   <description>V3.4a : metal4 overlap of via3 &gt;= 0.01 upper_metal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.4b</name>
+   <description>V3.4b : metal4 (&lt; 0.34um) end-of-line overlap of via3 : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V3.4c</name>
+   <description>V3.4c : If metal4 overlap via3 by &lt; 0.04um on one side, adjacent metal4 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.1</name>
+   <description>V4.1 : Min/max via4 size . : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.2a</name>
+   <description>V4.2a : min. via4 spacing : 0.26µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.2b</name>
+   <description>V4.2b : Space in 4x4 or larger via4 array : 0.36µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.3b</name>
+   <description>V4.3b : metal4 overlap of via4 &gt;= 0.01</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.3c</name>
+   <description>V4.3c : metal4 (&lt; 0.34um) end-of-line overlap of via4: 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.3d</name>
+   <description>V4.3d : If metal4 overlap via4 by &lt; 0.04um on one side, adjacent metal4 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.4a</name>
+   <description>V4.4a : metal5 overlap of via4 &gt;= 0.01 upper_metal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.4b</name>
+   <description>V4.4b : metal5 (&lt; 0.34um) end-of-line overlap of via4 : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>V4.4c</name>
+   <description>V4.4c : If metal5 overlap via4 by &lt; 0.04um on one side, adjacent metal5 edges overlap. : 0.06µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.8</name>
+   <description>ANT.8: Maximum ratio of contact area to related gate oxide area: 10</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>NonOvCLKGen</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

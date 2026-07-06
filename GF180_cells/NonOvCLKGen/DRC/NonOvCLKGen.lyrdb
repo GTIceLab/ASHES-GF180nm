@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description/>
+ <original-file/>
+ <generator>drc: script='/home/luha/pdks/ciel/gf180mcu/versions/f6bfbd4d3d23c4236ff1f36126489ee59aa35cbd/gf180mcuD/libs.tech/klayout/tech/drc/gf180mcu.drc'</generator>
+ <top-cell>NonOvCLKGen</top-cell>
+ <tags>
+ </tags>
+ <categories>
+ </categories>
+ <cells>
+  <cell>
+   <name>NonOvCLKGen</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

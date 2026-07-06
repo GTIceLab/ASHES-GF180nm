@@ -1,0 +1,99 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 22/06/2026 13:15
+
+* cell NonOvCLKGen
+.SUBCKT NonOvCLKGen
+* cell instance $1 m0 *1 -4.33,-5.12
+X$1 GND VDD CLK_IN PHI1 \$8 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__nor2_1
+* cell instance $2 r0 *1 -6.57,-5.12
+X$2 GND VDD CLK_IN \$15 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+* cell instance $3 r0 *1 3.51,-5.12
+X$3 VDD GND gf180mcu_fd_sc_mcu7t5v0__filltie
+* cell instance $4 r0 *1 4.63,-5.12
+X$4 \$7 VDD GND PHI1 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+* cell instance $5 r0 *1 -4.33,-5.12
+X$5 GND VDD \$15 PHI2 \$6 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__nor2_1
+* cell instance $6 r0 *1 -0.97,-5.12
+X$6 \$6 VDD GND \$7 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+* cell instance $7 m0 *1 4.63,-5.12
+X$7 \$9 VDD GND PHI2 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+* cell instance $8 m0 *1 3.51,-5.12
+X$8 VDD GND gf180mcu_fd_sc_mcu7t5v0__filltie
+* cell instance $9 m0 *1 -0.97,-5.12
+X$9 \$8 VDD GND \$9 VDD GND GND gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+.ENDS NonOvCLKGen
+
+* cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+* pin I
+* pin VDD
+* pin VSS
+* pin Z
+* pin 
+* pin 
+* pin SUB
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 I VDD VSS Z \$6 \$7 SUB
+* device instance $1 r0 *1 0.87,3.07 pfet_05v0
+M$1 \$4 I VDD \$6 pfet_05v0 L=0.5U W=1.02U AS=0.458P AD=0.4488P PS=2.02U
++ PD=2.92U
+* device instance $2 r0 *1 2.17,2.97 pfet_05v0
+M$2 Z \$4 VDD \$6 pfet_05v0 L=0.5U W=1.22U AS=0.458P AD=0.3782P PS=2.02U
++ PD=1.84U
+* device instance $3 r0 *1 3.29,2.97 pfet_05v0
+M$3 VDD \$4 Z \$6 pfet_05v0 L=0.5U W=1.22U AS=0.3782P AD=0.5368P PS=1.84U
++ PD=3.32U
+* device instance $4 r0 *1 0.92,0.98 nfet_05v0
+M$4 \$4 I VSS SUB nfet_05v0 L=0.6U W=0.36U AS=0.151P AD=0.1584P PS=1.185U
++ PD=1.6U
+* device instance $5 r0 *1 2.22,0.917 nfet_05v0
+M$5 Z \$4 VSS SUB nfet_05v0 L=0.6U W=0.485U AS=0.151P AD=0.1261P PS=1.185U
++ PD=1.005U
+* device instance $6 r0 *1 3.34,0.917 nfet_05v0
+M$6 VSS \$4 Z SUB nfet_05v0 L=0.6U W=0.485U AS=0.1261P AD=0.2134P PS=1.005U
++ PD=1.85U
+.ENDS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+
+* cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+* pin VSS
+* pin VDD
+* pin I
+* pin ZN
+* pin 
+* pin 
+* pin SUB
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__clkinv_1 VSS VDD I ZN \$5 \$6 SUB
+* device instance $1 r0 *1 0.87,2.97 pfet_05v0
+M$1 ZN I VDD \$5 pfet_05v0 L=0.5U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
++ PD=3.32U
+* device instance $2 r0 *1 0.92,0.92 nfet_05v0
+M$2 ZN I VSS SUB nfet_05v0 L=0.6U W=0.48U AS=0.2112P AD=0.2112P PS=1.84U
++ PD=1.84U
+.ENDS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+
+* cell gf180mcu_fd_sc_mcu7t5v0__filltie
+* pin VDD
+* pin VSS
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__filltie VDD VSS
+.ENDS gf180mcu_fd_sc_mcu7t5v0__filltie
+
+* cell gf180mcu_fd_sc_mcu7t5v0__nor2_1
+* pin VSS
+* pin VDD
+* pin A2
+* pin A1
+* pin ZN
+* pin 
+* pin 
+* pin SUB
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__nor2_1 VSS VDD A2 A1 ZN \$7 \$8 SUB
+* device instance $1 r0 *1 0.87,2.97 pfet_05v0
+M$1 \$6 A2 VDD \$7 pfet_05v0 L=0.5U W=1.22U AS=0.5368P AD=0.4087P PS=3.32U
++ PD=1.89U
+* device instance $2 r0 *1 2.04,2.97 pfet_05v0
+M$2 ZN A1 \$6 \$7 pfet_05v0 L=0.5U W=1.22U AS=0.4087P AD=0.5368P PS=1.89U
++ PD=3.32U
+* device instance $3 r0 *1 0.92,0.807 nfet_05v0
+M$3 ZN A2 VSS SUB nfet_05v0 L=0.6U W=0.565U AS=0.2486P AD=0.1469P PS=2.01U
++ PD=1.085U
+* device instance $4 r0 *1 2.04,0.807 nfet_05v0
+M$4 VSS A1 ZN SUB nfet_05v0 L=0.6U W=0.565U AS=0.1469P AD=0.2486P PS=1.085U
++ PD=2.01U
+.ENDS gf180mcu_fd_sc_mcu7t5v0__nor2_1
