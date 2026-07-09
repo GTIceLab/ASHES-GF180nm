@@ -1,0 +1,8 @@
+{
+    "process": "gf_180nm",
+    "lib_path": "../lib",
+    "drainSpaceIdx": 0,
+    "drainSpace": 0,
+    "gateSpaceIdx": 0,
+    "gateSpace": 0
+}

@@ -1,0 +1,8 @@
+Library 'LIB' with 1 cells and 0 raw cells
+
+Cell 'SchottkyDiode' with 197 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 3 labels
+  Labels in SchottkyDiode:
+    Text: 'GND_e' at (15.17, 5.03) on layer 34
+    Text: 'Anode_n' at (6.9, 12.41) on layer 36
+    Text: 'Cathode_s' at (6.93, -1.85) on layer 36
+

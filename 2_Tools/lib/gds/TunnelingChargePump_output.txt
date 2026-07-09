@@ -1,0 +1,69 @@
+Library 'TunnelingChargePump' with 8 cells and 0 raw cells
+
+Cell 'cap_mim_2p0fF_DKDW9X' with 2788 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 0 labels
+Cell 'diode_pd2nw_06v0_CLFV8T' with 65 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 0 labels
+Cell 'gf180mcu_fd_sc_mcu7t5v0__nor2_1' with 27 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 11 labels
+  Labels in gf180mcu_fd_sc_mcu7t5v0__nor2_1:
+    Text: 'VDD' at (1.68, 3.9250000000000003) on layer 34
+    Text: 'VSS' at (1.68, 0.0) on layer 34
+    Text: 'ZN' at (1.96, 2.52) on layer 34
+    Text: 'A1' at (1.96, 1.4000000000000001) on layer 34
+    Text: 'A2' at (0.84, 2.52) on layer 34
+    Text: '& Vendor GLOBALFOUNDRIES' at (0.0, 2.0) on layer 63
+    Text: '& Product GF018hv5v_mcu_sc7' at (0.0, 1.5) on layer 63
+    Text: '& Version 2015q2v1' at (0.0, 1.0) on layer 63
+    Text: '& Metric 1.00' at (0.0, 0.5) on layer 63
+    Text: 'VNW' at (0.34500000000000003, 3.92) on layer 21
+    Text: 'VPW' at (0.34, -0.085) on layer 204
+
+Cell 'gf180mcu_fd_sc_mcu7t5v0__filltie' with 17 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 6 labels
+  Labels in gf180mcu_fd_sc_mcu7t5v0__filltie:
+    Text: 'VDD' at (0.5700000000000001, 3.92) on layer 34
+    Text: 'VSS' at (0.5700000000000001, 0.0) on layer 34
+    Text: '& Vendor GLOBALFOUNDRIES' at (0.0, 2.0) on layer 63
+    Text: '& Product GF018hv5v_mcu_sc7' at (0.0, 1.5) on layer 63
+    Text: '& Version 2015q2v1' at (0.0, 1.0) on layer 63
+    Text: '& Metric 1.00' at (0.0, 0.5) on layer 63
+
+Cell 'gf180mcu_fd_sc_mcu7t5v0__clkinv_1' with 21 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 10 labels
+  Labels in gf180mcu_fd_sc_mcu7t5v0__clkinv_1:
+    Text: 'VDD' at (1.4000000000000001, 3.92) on layer 34
+    Text: 'VSS' at (1.4000000000000001, 0.0) on layer 34
+    Text: 'I' at (0.84, 1.96) on layer 34
+    Text: 'ZN' at (1.4000000000000001, 1.96) on layer 34
+    Text: '& Vendor GLOBALFOUNDRIES' at (0.0, 2.0) on layer 63
+    Text: '& Product GF018hv5v_mcu_sc7' at (0.0, 1.5) on layer 63
+    Text: '& Version 2015q2v1' at (0.0, 1.0) on layer 63
+    Text: '& Metric 1.00' at (0.0, 0.5) on layer 63
+    Text: 'VNW' at (0.34500000000000003, 3.92) on layer 21
+    Text: 'VPW' at (0.34, -0.085) on layer 204
+
+Cell 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_2' with 30 polygons, 0 flexpaths, 0 robustpaths, 0 references, and 10 labels
+  Labels in gf180mcu_fd_sc_mcu7t5v0__clkbuf_2:
+    Text: 'Z' at (3.08, 2.52) on layer 34
+    Text: 'VSS' at (2.185, 0.0) on layer 34
+    Text: 'VDD' at (2.185, 3.92) on layer 34
+    Text: 'I' at (0.84, 1.4000000000000001) on layer 34
+    Text: '& Vendor GLOBALFOUNDRIES' at (0.0, 2.0) on layer 63
+    Text: '& Product GF018hv5v_mcu_sc7' at (0.0, 1.5) on layer 63
+    Text: '& Version 2015q2v1' at (0.0, 1.0) on layer 63
+    Text: '& Metric 1.00' at (0.0, 0.5) on layer 63
+    Text: 'VNW' at (0.34500000000000003, 3.92) on layer 21
+    Text: 'VPW' at (0.34, -0.085) on layer 204
+
+Cell 'NonOvCLKGen' with 84 polygons, 0 flexpaths, 0 robustpaths, 9 references, and 5 labels
+  Labels in NonOvCLKGen:
+    Text: 'CLK_IN' at (-6.832, -3.192) on layer 34
+    Text: 'VDD' at (-6.7, -1.2) on layer 34
+    Text: 'PHI1' at (9.372, -3.192) on layer 34
+    Text: 'PHI2' at (9.372, -7.047) on layer 34
+    Text: 'GND' at (-6.7, -5.12) on layer 34
+
+Cell 'TunnelingChargePump' with 201 polygons, 0 flexpaths, 0 robustpaths, 9 references, and 5 labels
+  Labels in TunnelingChargePump:
+    Text: 'VDD_w' at (0.265, 53.565) on layer 34
+    Text: 'CLK_IN_w' at (0.275, 51.572) on layer 34
+    Text: 'GND_w' at (0.275, 49.645) on layer 34
+    Text: 'Vout_e' at (94.68, 45.225) on layer 36
+    Text: 'Vin_w' at (0.44, 56.275) on layer 36
+

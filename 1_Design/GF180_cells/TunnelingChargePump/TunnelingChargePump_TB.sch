@@ -100,4 +100,4 @@ XINV4 PHI2_1 PHI2_out VDD VDD GND GND gf180mcu_fd_sc_mcu7t5v0__inv_20
 C {vsource.sym} -420 -30 0 0 {name=V3 value=.5 savecurrent=false}
 C {gnd.sym} -420 0 0 0 {name=l1 lab=0}
 C {lab_wire.sym} -130 0 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {GF180_cells/TunnelingChargePump/TunnelingChargePump.sym} 150 10 0 0 {name=x1}
+C {ASHES-GF180nm/1_Design/GF180_cells/TunnelingChargePump/TunnelingChargePump.sym} 150 10 0 0 {name=x1}
