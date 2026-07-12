@@ -1306,6 +1306,17 @@ END Via4_GEN_VV
 END LIBRARY
 
 
+MACRO SchottkyDiode
+  PIN GND_e
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1_Label ;
+        RECT 14.99 6.97 15.35 7.48 ;
+    END
+  END GND_e
+END SchottkyDiode
+
 MACRO TunnelingChargePump
   PIN VDD_w
     DIRECTION INOUT ;
@@ -1332,16 +1343,5 @@ MACRO TunnelingChargePump
     END
   END GND_w
 END TunnelingChargePump
-
-MACRO SchottkyDiode
-  PIN GND_e
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER Metal1_Label ;
-        RECT 14.99 6.97 15.35 7.48 ;
-    END
-  END GND_e
-END SchottkyDiode
 
 END LIBRARY

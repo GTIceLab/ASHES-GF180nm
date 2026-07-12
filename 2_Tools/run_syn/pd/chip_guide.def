@@ -21,8 +21,8 @@ TRACKS X 0 DO 893 STEP 560 LAYER Metal1 ;
 TRACKS Y 0 DO 357 STEP 560 LAYER Metal1 ;
 
 COMPONENTS 3 ;
-- I_0_0_0_0 TunnelingChargePump + PLACED ( 1000 1000 ) N ;
-- I_1_0_0_0 SchottkyDiode + PLACED ( 115350 100000 ) N ;
-- I_1_1_0_0 SchottkyDiode + PLACED ( 100000 114920 ) N ;
+- I_0_0_0_0 SchottkyDiode + PLACED ( 0 0 ) N ;
+- I_1_0_0_0 SchottkyDiode + PLACED ( 40000 0 ) N ;
+- I_2_0_0_0 TunnelingChargePump + PLACED ( 80000 0 ) N ;
 END COMPONENTS
 
