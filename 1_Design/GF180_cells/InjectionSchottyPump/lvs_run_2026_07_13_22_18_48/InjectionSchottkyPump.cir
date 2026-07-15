@@ -1,0 +1,22 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 13/07/2026 18:18
+
+.SUBCKT InjectionSchottkyPump
+C$1 \$8 PHI1_w 3.2e-12 cap_mim_2f0fF A=1600P P=160U
+C$2 \$1 PHI2_w 3.2e-12 cap_mim_2f0fF A=1600P P=160U
+C$3 Vout_e GND_w 3.2e-12 cap_mim_2f0fF A=1600P P=160U
+D$4 \$10 \$1 sc_diode A=0.72P P=4.72U
+D$5 \$10 \$1 sc_diode A=0.72P P=4.72U
+D$6 \$10 \$1 sc_diode A=0.72P P=4.72U
+D$7 \$10 \$1 sc_diode A=0.72P P=4.72U
+D$8 \$10 \$1 sc_diode A=0.72P P=4.72U
+D$9 \$16 Vout_e sc_diode A=0.72P P=4.72U
+D$10 \$16 Vout_e sc_diode A=0.72P P=4.72U
+D$11 \$16 Vout_e sc_diode A=0.72P P=4.72U
+D$12 \$16 Vout_e sc_diode A=0.72P P=4.72U
+D$13 \$16 Vout_e sc_diode A=0.72P P=4.72U
+D$14 \$17 \$8 sc_diode A=0.72P P=4.72U
+D$15 \$17 \$8 sc_diode A=0.72P P=4.72U
+D$16 \$17 \$8 sc_diode A=0.72P P=4.72U
+D$17 \$17 \$8 sc_diode A=0.72P P=4.72U
+D$18 \$17 \$8 sc_diode A=0.72P P=4.72U
+.ENDS InjectionSchottkyPump

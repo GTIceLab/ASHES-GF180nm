@@ -25,7 +25,7 @@ N -420 -160 -130 -160 {lab=#net1}
 N -130 -160 -130 -20 {lab=#net1}
 N -40 20 -20 20 {lab=PHI1_out}
 N -130 0 0 -0 {lab=VDD}
-C {code_shown.sym} 280 100 0 0 {name=MODELS only_toplevel=true
+C {code_shown.sym} 220 100 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value=
 ".include /home/luha/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
@@ -37,9 +37,9 @@ value=
 .lib /home/luha/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
 .lib /home/luha/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
 "}
-C {devices/code_shown.sym} -490 370 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} -480 440 0 0 {name=NGSPICE only_toplevel=true
 value="
-V1 CLK_IN 0 pulse(0 5 2ns 0.5ns 0.5ns 49.5ns 100ns)
+V1 CLK_IN 0 0
 .control
 save all
 tran 1n 10u
@@ -100,4 +100,4 @@ XINV4 PHI2_1 PHI2_out VDD VDD GND GND gf180mcu_fd_sc_mcu7t5v0__inv_20
 C {vsource.sym} -420 -30 0 0 {name=V3 value=.5 savecurrent=false}
 C {gnd.sym} -420 0 0 0 {name=l1 lab=0}
 C {lab_wire.sym} -130 0 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {ASHES-GF180nm/1_Design/GF180_cells/TunnelingChargePump/TunnelingChargePump.sym} 150 10 0 0 {name=x1}
+C {/home/luha/ASHES-GF180nm/1_Design/GF180_cells/InjectionChargePump/InjectionChargePump.sym} 150 10 0 0 {name=x1}

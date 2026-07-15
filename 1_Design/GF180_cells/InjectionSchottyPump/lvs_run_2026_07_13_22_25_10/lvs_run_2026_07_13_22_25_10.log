@@ -1,0 +1,2 @@
+13-Jul-2026 18:25:10 | INFO    | Your Klayout version is: KLayout 0.30.9
+13-Jul-2026 18:25:10 | INFO    | Running Global Foundries 180nm MCU /home/luha/pdks/gf180mcuD/libs.tech/klayout/tech/lvs/gf180mcu.lvs checks on design /home/luha/ASHES-GF180nm/1_Design/GF180_cells/InjectionSchottyPump/InjectionSchottkyPump.gds on cell InjectionSchottkyPump

@@ -1,0 +1,10 @@
+** sch_path: /home/luha/ASHES-GF180nm/1_Design/GF180_cells/InjectionSchottyPump/InjectionSchottkyPump.sch
+.subckt InjectionSchottkyPump Vin_w PHI2_w Vout_e PHI1_w GND_w
+*.PININFO Vin_w:I PHI2_w:I Vout_e:O PHI1_w:I GND_w:I
+C1 Stage1_out PHI1_w cap_mim_2f0fF W=40e-6 L=40e-6
+C2 Stage2_out PHI2_w cap_mim_2f0fF W=40e-6 L=40e-6
+C3 Vout_e GND_w cap_mim_2f0fF W=40e-6 L=40e-6
+D4 Vin_w Stage1_out sc_diode A='.62u * 2u ' P='2*.62u + 2*2u ' m=4
+D1 Stage1_out Stage2_out sc_diode A='.62u * 2u ' P='2*.62u + 2*2u ' m=4
+D2 Stage2_out Vout_e sc_diode A='.62u * 2u ' P='2*.62u + 2*2u ' m=4
+.ends

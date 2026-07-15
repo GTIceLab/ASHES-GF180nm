@@ -51,44 +51,11 @@ C {ipin.sym} -340 170 0 0 {name=p5 lab=CLKA}
 C {ipin.sym} -100 190 0 0 {name=p6 lab=CLKB}
 C {lab_wire.sym} -310 0 0 0 {name=p8 sig_type=std_logic lab=Stage1_out}
 C {lab_wire.sym} -110 0 0 0 {name=p9 sig_type=std_logic lab=Stage2_out}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/cap_mim_1f0fF.sym} 690 70 0 0 {name=C3
-W=60e-6
-L=60e-6
-model=cap_mim_1f0fF
-spiceprefix=X
-m=1}
 C {opin.sym} 970 0 0 0 {name=p12 lab=Vout}
 C {gnd.sym} 690 140 0 0 {name=l1 lab=0}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/ppolyf_u.sym} 930 30 0 0 {name=R2
-W=1e-6
-L=9760e-6
-model=ppolyf_u
-spiceprefix=X
-m=1}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/ppolyf_u.sym} 930 110 0 0 {name=R4
-W=1e-6
-L=1084e-6
-model=ppolyf_u
-spiceprefix=X
-m=1}
 C {opin.sym} 1000 70 0 0 {name=p13 lab=Vdiv}
 C {gnd.sym} 930 160 0 0 {name=l2 lab=0}
 C {ipin.sym} 890 70 0 0 {name=p3 lab=VDD}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -460 30 0 0 {name=D4
-model=diode_pd2nw_06v0
-r_w=1u
-r_l=1u
-m=1}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -230 30 0 0 {name=D1
-model=diode_pd2nw_06v0
-r_w=1u
-r_l=1u
-m=1}
-C {pdks/gf180mcuD/libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -30 30 0 0 {name=D3
-model=diode_pd2nw_06v0
-r_w=1u
-r_l=1u
-m=1}
 C {symbols/cap_mim_2f0fF.sym} -340 70 0 0 {name=C1
 W=40e-6
 L=40e-6
@@ -99,5 +66,38 @@ C {symbols/cap_mim_2f0fF.sym} -100 70 0 0 {name=C2
 W=40e-6
 L=40e-6
 model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -460 30 0 0 {name=D1
+model=diode_pd2nw_06v0
+r_w=1u
+r_l=1u
+m=4}
+C {libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -230 30 0 0 {name=D2
+model=diode_pd2nw_06v0
+r_w=1u
+r_l=1u
+m=4}
+C {libs.tech/xschem/symbols/diode_pd2nw_06v0.sym} -30 30 0 0 {name=D3
+model=diode_pd2nw_06v0
+r_w=1u
+r_l=1u
+m=4}
+C {symbols/cap_mim_2f0fF.sym} 690 70 0 0 {name=C3
+W=40e-6
+L=40e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {libs.tech/xschem/symbols/ppolyf_u.sym} 930 30 0 0 {name=R1
+W=1e-6
+L=9760e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {libs.tech/xschem/symbols/ppolyf_u.sym} 930 110 0 0 {name=R3
+W=1e-6
+L=1084e-6
+model=ppolyf_u
 spiceprefix=X
 m=1}
