@@ -1,0 +1,49 @@
+* Charge pump netlists, taken from a KLayout LVS-deck extraction of the cells in
+* 2_Tools/lib/gds/FinalPumps/ (see ../netlists/).
+*
+* Each sc_diode layout cell holds five Schottky diodes in parallel, each with
+* area 0.72 um^2 and perimeter 4.72 um. Each MIM capacitor is 40 um x 40 um.
+
+.subckt sc_diode_x5 A C
+D1 A C sc_diode area=0.72e-12 pj=4.72e-6 m=5
+.ends
+
+.subckt mim40 P N
+XC P N cap_mim_2f0fF c_width=40e-6 c_length=40e-6
+.ends
+
+* Two stages.
+.subckt InjectionSchottkyPump Vin_w PHI1_w PHI2_w Vout_e GND_w Stage1_out Stage2_out
+XD1 Vin_w Stage1_out sc_diode_x5
+XD2 Stage1_out Stage2_out sc_diode_x5
+XD3 Stage2_out Vout_e sc_diode_x5
+XC1 Stage1_out PHI1_w mim40
+XC2 Stage2_out PHI2_w mim40
+XC3 Vout_e GND_w mim40
+.ends
+
+* Three stages.
+.subckt TunnelingSchottkyPump Vin_w PHI1_w PHI2_w Vout_e GND_w
+XD1 Vin_w n1 sc_diode_x5
+XD2 n1 n2 sc_diode_x5
+XD3 n2 n3 sc_diode_x5
+XD4 n3 Vout_e sc_diode_x5
+XC1 n1 PHI1_w mim40
+XC2 n2 PHI2_w mim40
+XC3 n3 PHI1_w mim40
+XC4 Vout_e GND_w mim40
+.ends
+
+* Four stages.
+.subckt HVSchottkyPump Vin_w PHI1_w PHI2_w Vout_e GND_w
+XD1 Vin_w n1 sc_diode_x5
+XD2 n1 n2 sc_diode_x5
+XD3 n2 n3 sc_diode_x5
+XD4 n3 n4 sc_diode_x5
+XD5 n4 Vout_e sc_diode_x5
+XC1 n1 PHI1_w mim40
+XC2 n2 PHI2_w mim40
+XC3 n3 PHI1_w mim40
+XC4 n4 PHI2_w mim40
+XC5 Vout_e GND_w mim40
+.ends

@@ -1,0 +1,54 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/10/2026 16:12
+
+* cell TunnelingSchottkyPump
+.SUBCKT TunnelingSchottkyPump
+* cell instance $1 r0 *1 55.2,0.58
+X$1 GND_w Vout_e \$8 cap_mim
+* cell instance $2 r0 *1 31.02,53.16
+X$2 \$I17 \$2 \$14 \$20 sc_diode
+* cell instance $3 r0 *1 58.25,63.58
+X$3 \$I15 \$13 \$2 \$23 sc_diode
+* cell instance $4 r0 *1 0.6,0.6
+X$4 \$2 PHI2_w \$11 cap_mim
+* cell instance $5 r0 *1 58.25,53.06
+X$5 \$I15 Vout_e \$13 \$19 sc_diode
+* cell instance $6 r0 *1 55.2,77.89
+X$6 \$13 PHI1_w \$27 cap_mim
+* cell instance $7 r0 *1 31.02,63.68
+X$7 \$I17 \$14 Vin_w \$22 sc_diode
+* cell instance $8 r0 *1 0.6,77.89
+X$8 \$14 PHI1_w \$25 cap_mim
+* device instance $1 r0 *1 20.6,97.89 cap_mim_2f0_m4m5_noshield
+C$1 \$14 PHI1_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $2 r0 *1 20.6,20.6 cap_mim_2f0_m4m5_noshield
+C$2 \$2 PHI2_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $3 r0 *1 75.2,97.89 cap_mim_2f0_m4m5_noshield
+C$3 \$13 PHI1_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $4 r0 *1 75.2,20.58 cap_mim_2f0_m4m5_noshield
+C$4 GND_w Vout_e 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+.ENDS TunnelingSchottkyPump
+
+* cell sc_diode
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT sc_diode \$1 \$2 \$3 \$13
+* device instance $1 r0 *1 0.18,1 sc_diode
+D$1 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $2 r0 *1 1.72,1 sc_diode
+D$2 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $3 r0 *1 3.26,1 sc_diode
+D$3 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $4 r0 *1 4.8,1 sc_diode
+D$4 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $5 r0 *1 6.34,1 sc_diode
+D$5 \$13 \$2 sc_diode A=0.72P P=4.72U
+.ENDS sc_diode
+
+* cell cap_mim
+* pin 
+* pin 
+* pin 
+.SUBCKT cap_mim \$1 \$2 \$2701
+.ENDS cap_mim

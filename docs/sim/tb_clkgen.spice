@@ -1,0 +1,26 @@
+* Non-overlapping clock generator: phase timing with the injection pump as load.
+.include models.spice
+.include clock.spice
+.include pumps.spice
+.param vdd=5 freq=1e6
+VDD VDD 0 {vdd}
+VIN VIN 0 {vdd}
+VCLK PAD 0 pulse(0 {vdd} 20n 1n 1n {0.5/freq - 1n} {1/freq})
+XCLK PAD PHI1 PHI2 VDD 0 pump_clock
+XPUMP VIN PHI1 PHI2 VOUT 0 S1 S2 InjectionSchottkyPump
+CL VOUT 0 10p
+.option method=gear
+.control
+tran 0.05n 3u 1u
+meas tran t_phi1_fall when v(phi1)=2.5 fall=1
+meas tran t_phi2_rise when v(phi2)=2.5 rise=1
+meas tran t_phi2_fall when v(phi2)=2.5 fall=1
+meas tran t_phi1_rise when v(phi1)=2.5 rise=1
+let gap_12 = t_phi2_rise - t_phi1_fall
+let gap_21 = t_phi1_rise - t_phi2_fall
+meas tran phi1_high max v(phi1)
+meas tran phi1_low min v(phi1)
+print gap_12 gap_21
+wrdata out_clkgen.txt v(pad) v(phi1) v(phi2)
+.endc
+.end

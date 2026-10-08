@@ -1,0 +1,11 @@
+[
+ {"name": "die", "box": [0, 0, 3932, 2531], "width": 1966},
+ {"name": "injection_pump", "box": [692, 930, 884, 1065], "width": 1000, "scale_um": 20},
+ {"name": "hv_pump", "box": [692, 1335, 938, 1470], "width": 1000, "scale_um": 20},
+ {"name": "tunneling_pump", "box": [692, 1501, 884, 1636], "width": 1000, "scale_um": 20},
+ {"name": "fg_4x2_indirect", "box": [1617, 1963, 1662, 1981], "width": 1000, "scale_um": 5},
+ {"name": "ta_2x_fg", "box": [2980, 1928, 3027, 1947], "width": 1000, "scale_um": 5},
+ {"name": "fg_characterization", "box": [3309, 632, 3334, 672], "width": 500, "scale_um": 5},
+ {"name": "fets", "box": [1040, 655, 1095, 674], "width": 1000, "scale_um": 5},
+ {"name": "wta", "box": [2221.5, 718, 2246.5, 752.5], "width": 500, "scale_um": 5}
+]
