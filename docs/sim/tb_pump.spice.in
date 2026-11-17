@@ -1,0 +1,20 @@
+* Charge pump: output voltage against time for one operating point.
+* Generated from tb_pump.spice.in by run_sims.py.
+.include models.spice
+.include clock.spice
+.include pumps.spice
+VDD VDD 0 @VDD@
+VIN VIN 0 @VIN@
+VCLK PAD 0 pulse(0 @VDD@ 20n 1n 1n @THIGH@ @PERIOD@)
+XCLK PAD PHI1 PHI2 VDD 0 pump_clock
+XPUMP VIN PHI1 PHI2 VOUT 0 @EXTRA@ @PUMP@
+CL VOUT 0 10p
+RL VOUT 0 @RLOAD@
+.option method=gear
+.control
+tran @TSTEP@ @TSTOP@
+meas tran vout_final avg v(vout) from=@TAVG@ to=@TSTOP@
+meas tran vout_ripple pp v(vout) from=@TAVG@ to=@TSTOP@
+wrdata @OUT@ v(vout)
+.endc
+.end

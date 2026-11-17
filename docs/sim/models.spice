@@ -1,0 +1,8 @@
+* GF180MCU models for the testbenches in this directory.
+* "pdk" is a symlink to the gf180mcuD directory of an installed PDK (see README.md).
+.include pdk/libs.tech/ngspice/design.ngspice
+.lib pdk/libs.tech/ngspice/sm141064.ngspice typical
+.lib pdk/libs.tech/ngspice/sm141064.ngspice diode_typical
+.lib pdk/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.include pdk/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice
+.lib pdk/libs.tech/ngspice/sm141064.ngspice cap_mim

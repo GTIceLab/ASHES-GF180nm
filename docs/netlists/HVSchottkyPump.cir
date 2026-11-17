@@ -1,0 +1,60 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 05/10/2026 16:12
+
+* cell HVSchottkyPump
+.SUBCKT HVSchottkyPump
+* cell instance $1 r0 *1 85.57,63.47
+X$1 \$I21 Vout_e \$1 \$34 sc_diode
+* cell instance $2 r0 *1 58.25,53.06
+X$2 \$I19 \$1 \$26 \$32 sc_diode
+* cell instance $3 r0 *1 55.2,0.58
+X$3 \$1 PHI2_w \$9 cap_mim
+* cell instance $4 r0 *1 31.02,53.16
+X$4 \$I20 \$2 \$22 \$30 sc_diode
+* cell instance $5 r0 *1 58.25,63.58
+X$5 \$I19 \$26 \$2 \$33 sc_diode
+* cell instance $6 r0 *1 0.6,0.6
+X$6 \$2 PHI2_w \$16 cap_mim
+* cell instance $7 r0 *1 107.175,0.58
+X$7 GND_w Vout_e \$12 cap_mim
+* cell instance $8 r0 *1 31.02,63.68
+X$8 \$I20 \$22 Vin_w \$31 sc_diode
+* cell instance $9 r0 *1 55.2,77.89
+X$9 \$26 PHI1_w \$29 cap_mim
+* cell instance $10 r0 *1 0.6,77.89
+X$10 \$22 PHI1_w \$21 cap_mim
+* device instance $1 r0 *1 20.6,97.89 cap_mim_2f0_m4m5_noshield
+C$1 \$22 PHI1_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $2 r0 *1 20.6,20.6 cap_mim_2f0_m4m5_noshield
+C$2 \$2 PHI2_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $3 r0 *1 75.2,97.89 cap_mim_2f0_m4m5_noshield
+C$3 \$26 PHI1_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $4 r0 *1 127.175,20.58 cap_mim_2f0_m4m5_noshield
+C$4 GND_w Vout_e 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+* device instance $5 r0 *1 75.2,20.58 cap_mim_2f0_m4m5_noshield
+C$5 \$1 PHI2_w 3.2e-12 cap_mim_2f0_m4m5_noshield A=1600P P=160U
+.ENDS HVSchottkyPump
+
+* cell sc_diode
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT sc_diode \$1 \$2 \$3 \$13
+* device instance $1 r0 *1 0.18,1 sc_diode
+D$1 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $2 r0 *1 1.72,1 sc_diode
+D$2 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $3 r0 *1 3.26,1 sc_diode
+D$3 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $4 r0 *1 4.8,1 sc_diode
+D$4 \$13 \$2 sc_diode A=0.72P P=4.72U
+* device instance $5 r0 *1 6.34,1 sc_diode
+D$5 \$13 \$2 sc_diode A=0.72P P=4.72U
+.ENDS sc_diode
+
+* cell cap_mim
+* pin 
+* pin 
+* pin 
+.SUBCKT cap_mim \$1 \$2 \$2701
+.ENDS cap_mim

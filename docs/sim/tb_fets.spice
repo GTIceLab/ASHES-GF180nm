@@ -1,0 +1,45 @@
+* 3NFET and 3PFET characterization cells: drain current against gate voltage.
+* Device sizes come from a KLayout LVS-deck extraction of
+* 1_Design/GF180_cells/Ike/3NFETs.gds and 3PFETs.gds (see ../netlists/).
+* All six devices are 3.3 V devices with L = 0.28 um.
+.include models.spice
+.param vds=3.3
+* NFETs: shared gate and source, bulk to ground.
+VGN GN 0 0
+VDN DN 0 {vds}
+VNS NS 0 0
+VNM NM 0 0
+VNL NL 0 0
+XN_S NDS GN 0 0 nfet_03v3 W=0.5u L=0.28u nf=1
+XN_M NDM GN 0 0 nfet_03v3 W=5u L=0.28u nf=1
+XN_L NDL GN 0 0 nfet_03v3 W=50u L=0.28u nf=10
+VNDS DN NDS 0
+VNDM DN NDM 0
+VNDL DN NDL 0
+* PFETs: shared gate and source, n-well to VDD = 3.3 V, source at 3.3 V.
+VSP SP 0 3.3
+VGP GP 0 3.3
+VDP DP 0 {3.3 - vds}
+XP_S PDS GP SP SP pfet_03v3 W=0.5u L=0.28u nf=1
+XP_M PDM GP SP SP pfet_03v3 W=5u L=0.28u nf=1
+XP_L PDL GP SP SP pfet_03v3 W=50u L=0.28u nf=10
+VPDS PDS DP 0
+VPDM PDM DP 0
+VPDL PDL DP 0
+.control
+* |Vds| = 0.1 V (linear region)
+alterparam vds = 0.1
+reset
+dc VGN 0 3.3 0.01
+wrdata out_nfet_vds0.1.txt i(VNDS) i(VNDM) i(VNDL)
+dc VGP 3.3 0 -0.01
+wrdata out_pfet_vds0.1.txt i(VPDS) i(VPDM) i(VPDL)
+* |Vds| = 3.3 V (saturation)
+alterparam vds = 3.3
+reset
+dc VGN 0 3.3 0.01
+wrdata out_nfet_vds3.3.txt i(VNDS) i(VNDM) i(VNDL)
+dc VGP 3.3 0 -0.01
+wrdata out_pfet_vds3.3.txt i(VPDS) i(VPDM) i(VPDL)
+.endc
+.end
